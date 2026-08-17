@@ -108,3 +108,37 @@ ul svg {
   width: 300px;
   overflow: hidden;
 }
+
+@media (min-width: 750px) {
+  :root {
+    --base-font-size: 1.125rem;
+  }
+
+  h1 {
+    margin-left: -3px;
+  }
+
+  .wrapper {
+    padding: 5rem;
+  }
+
+  .main-article {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+  }
+
+  .main-article img {
+    max-height: 400px;
+    margin: 0 0 0 auto;
+    object-fit: none;
+    object-position: none;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+
+  .icons {
+    justify-content: flex-start;
+  }
+}
