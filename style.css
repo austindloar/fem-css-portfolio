@@ -144,6 +144,28 @@ footer {
   line-height: 2;
 }
 
+/* projects section */
+main {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.project {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--corners);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.projects {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+}
+
 @media (min-width: 750px) {
   :root {
     --base-font-size: 1.125rem;
