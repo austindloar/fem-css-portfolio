@@ -10,10 +10,15 @@
   --corners: 24px 0;
   --corners-sm: 10px 0;
   --base-font-size: 1rem;
+  --ld-bkgd: light-dark(var(--platinum), var(--charcoal));
+  --ld-text: light-dark(var(--onyx), var(--white));
+  --ld-projects: light-dark(var(--white), #2e313d);
+  --ld-blue: light-dark(var(--windsurfing), #6dadd0);
 }
 /* set the box sizing to border-box for layouts */
 html {
   box-sizing: border-box;
+  color-scheme: light dark;
 }
 *,
 *::before,
@@ -24,8 +29,8 @@ html {
 body {
   font-size: var(--base-font-size);
   font-family: "Inter", sans-serif;
-  background-color: var(--platinum);
-  color: var(--onyx);
+  background-color: var(--ld-bkgd);
+  color: var(--ld-text);
 }
 
 .wrapper {
@@ -43,7 +48,7 @@ h2 {
   margin: 0;
   font-size: var(--base-font-size);
   text-transform: uppercase;
-  color: var(--windsurfing);
+  color: var(--ld-blue);
   letter-spacing: 0.25em;
 }
 
@@ -56,7 +61,7 @@ p {
 }
 
 a {
-  color: var(--windsurfing);
+  color: var(--ld-blue);
 }
 
 a:hover {
@@ -86,7 +91,7 @@ ul svg {
 }
 
 .social {
-  fill: var(--windsurfing);
+  fill: var(--ld-blue);
 }
 
 .social:hover {
@@ -134,7 +139,7 @@ footer {
 }
 
 footer .social {
-  fill: var(--onyx);
+  fill: var(--ld-text);
 }
 
 footer .social:hover {
@@ -153,7 +158,7 @@ main {
 }
 
 .project {
-  background-color: var(--white);
+  background-color: var(--ld-projects);
   padding: 3rem;
   border-radius: var(--corners);
   display: grid;
