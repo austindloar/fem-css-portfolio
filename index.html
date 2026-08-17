@@ -9,16 +9,18 @@
   <body>
     <div class="wrapper">
       <header>
-        <fieldset id="mode-switcher">
+        <fieldset id="mode-switcher" class="radio-switch">
           <legend>Select a color mode:</legend>
-          <div>
-            <input type="radio" id="light" name="mode" value="light" checked />
-            <label for="light">Light</label>
-          </div>
-          <div>
-            <input type="radio" id="dark" name="mode" value="dark" />
-            <label for="dark">Dark</label>
-          </div>
+          <input
+            type="radio"
+            id="light"
+            name="color-scheme"
+            value="light"
+            checked
+          />
+          <label for="light">Light</label>
+          <input type="radio" id="dark" name="color-scheme" value="dark" />
+          <label for="dark">Dark</label>
         </fieldset>
       </header>
       <article class="main-article">
