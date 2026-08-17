@@ -109,6 +109,41 @@ ul svg {
   overflow: hidden;
 }
 
+/* footer styling */
+footer {
+  text-align: center;
+}
+
+.footer-text {
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-text-box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: calc(var(--base-font-size) * 0.85);
+}
+
+.h2-footer {
+  margin: 2rem 0;
+}
+
+.icons .social {
+  fill: var(--onyx);
+}
+
+.icons .social:hover {
+  fill: var(--marina);
+}
+
+.footer-text-box li {
+  line-height: 2;
+}
+
 @media (min-width: 750px) {
   :root {
     --base-font-size: 1.125rem;
