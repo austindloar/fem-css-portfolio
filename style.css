@@ -133,11 +133,11 @@ footer {
   margin: 2rem 0;
 }
 
-.icons .social {
+footer .social {
   fill: var(--onyx);
 }
 
-.icons .social:hover {
+footer .social:hover {
   fill: var(--marina);
 }
 
