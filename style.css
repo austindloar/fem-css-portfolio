@@ -1,0 +1,30 @@
+/* starting variables for the site */
+:root {
+  --white: #f9faff;
+  --platinum: #e3e4e8;
+  --windsurfing: #32779b;
+  --marina: #5a91c7;
+  --gray: #9a9a9a;
+  --onyx: #3c3d44;
+  --charcoal: #343c47;
+  --corners: 24px 0;
+  --base-font-size: 1rem;
+}
+/* set the box sizing to border-box for layouts */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Basic page set to our font size and font family. Link to the font family in CodePen under Settings - CSS - External stylesheets and pens. */
+body {
+  font-size: var(--base-font-size);
+  font-family: "Inter", sans-serif;
+}
+/* make sure images don't exceed the width of the window */
+img {
+  max-width: 100%;
+}
