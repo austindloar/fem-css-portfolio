@@ -8,6 +8,7 @@
   --onyx: #3c3d44;
   --charcoal: #343c47;
   --corners: 24px 0;
+  --corners-sm: 10px 0;
   --base-font-size: 1rem;
 }
 /* set the box sizing to border-box for layouts */
@@ -164,6 +165,32 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 3rem;
+}
+
+.project ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project li {
+  background-color: var(--marina);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: var(--corners-sm);
+  font-size: calc(var(--base-font-size) * 0.85);
+}
+
+.project img {
+  grid-row: 1/2;
+}
+
+.img-border {
+  border: 1px solid var(--onyx);
 }
 
 @media (min-width: 750px) {
