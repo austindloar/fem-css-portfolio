@@ -61,3 +61,27 @@ img {
   max-width: 100%;
   border-radius: var(--corners);
 }
+
+/* svg social icon bar */
+.icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+ul svg {
+  width: 36px;
+  height: 36px;
+}
+
+.social {
+  fill: var(--windsurfing);
+}
+
+.social:hover {
+  fill: var(--marina);
+}
