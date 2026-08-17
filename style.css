@@ -27,6 +27,12 @@ body {
   color: var(--onyx);
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 h1 {
   margin: 0;
   font-size: calc(var(--base-font-size) * 2.9);
@@ -69,7 +75,7 @@ img {
   padding: 0;
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-end;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -84,4 +90,21 @@ ul svg {
 
 .social:hover {
   fill: var(--marina);
+}
+
+/* about me layout styling */
+.main-article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+.main-article img {
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: top;
+  height: 175px;
+  width: 300px;
+  overflow: hidden;
 }
